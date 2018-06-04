@@ -12,6 +12,9 @@
 		17747FDB20B8B74B00FC8405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17747FD920B8B74B00FC8405 /* Main.storyboard */; };
 		17747FDD20B8B74D00FC8405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17747FDC20B8B74D00FC8405 /* Assets.xcassets */; };
 		17747FE020B8B74D00FC8405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17747FDE20B8B74D00FC8405 /* LaunchScreen.storyboard */; };
+		178002C420C602BA006B4E47 /* SimpleTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178002C320C602BA006B4E47 /* SimpleTrackingViewController.swift */; };
+		178002C620C60455006B4E47 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 178002C520C60455006B4E47 /* ADBMobileConfig.json */; };
+		44F83529BEA91108CE15CE11 /* Pods_AdobeAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63594D50CD6B4F686E5200E /* Pods_AdobeAnalytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		17747FDC20B8B74D00FC8405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17747FDF20B8B74D00FC8405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17747FE120B8B74D00FC8405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		178002C320C602BA006B4E47 /* SimpleTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTrackingViewController.swift; sourceTree = "<group>"; };
+		178002C520C60455006B4E47 /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
+		39AB95F2842C81B453A1ED60 /* Pods-AdobeAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdobeAnalytics.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdobeAnalytics/Pods-AdobeAnalytics.release.xcconfig"; sourceTree = "<group>"; };
+		C63594D50CD6B4F686E5200E /* Pods_AdobeAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdobeAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9ECC6B8A105561361585F00 /* Pods-AdobeAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdobeAnalytics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdobeAnalytics/Pods-AdobeAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F83529BEA91108CE15CE11 /* Pods_AdobeAnalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				17747FD420B8B74B00FC8405 /* AdobeAnalytics */,
 				17747FD320B8B74B00FC8405 /* Products */,
+				3414827F097E75B4071DD813 /* Pods */,
+				618937202A6812798C7638C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,7 +65,9 @@
 		17747FD420B8B74B00FC8405 /* AdobeAnalytics */ = {
 			isa = PBXGroup;
 			children = (
+				178002C520C60455006B4E47 /* ADBMobileConfig.json */,
 				17747FD520B8B74B00FC8405 /* AppDelegate.swift */,
+				178002C320C602BA006B4E47 /* SimpleTrackingViewController.swift */,
 				17747FD720B8B74B00FC8405 /* ViewController.swift */,
 				17747FD920B8B74B00FC8405 /* Main.storyboard */,
 				17747FDC20B8B74D00FC8405 /* Assets.xcassets */,
@@ -64,6 +77,23 @@
 			path = AdobeAnalytics;
 			sourceTree = "<group>";
 		};
+		3414827F097E75B4071DD813 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9ECC6B8A105561361585F00 /* Pods-AdobeAnalytics.debug.xcconfig */,
+				39AB95F2842C81B453A1ED60 /* Pods-AdobeAnalytics.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		618937202A6812798C7638C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C63594D50CD6B4F686E5200E /* Pods_AdobeAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17747FE420B8B74D00FC8405 /* Build configuration list for PBXNativeTarget "AdobeAnalytics" */;
 			buildPhases = (
+				B9E8F492B2416F4BE82A8F0F /* [CP] Check Pods Manifest.lock */,
 				17747FCE20B8B74B00FC8405 /* Sources */,
 				17747FCF20B8B74B00FC8405 /* Frameworks */,
 				17747FD020B8B74B00FC8405 /* Resources */,
+				E1A5C50833A7D56666DE5848 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17747FE020B8B74D00FC8405 /* LaunchScreen.storyboard in Resources */,
+				178002C620C60455006B4E47 /* ADBMobileConfig.json in Resources */,
 				17747FDD20B8B74D00FC8405 /* Assets.xcassets in Resources */,
 				17747FDB20B8B74B00FC8405 /* Main.storyboard in Resources */,
 			);
@@ -130,11 +163,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B9E8F492B2416F4BE82A8F0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdobeAnalytics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1A5C50833A7D56666DE5848 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AdobeAnalytics/Pods-AdobeAnalytics-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AdobeMobileSDK/AdobeMobileSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AdobeMobileSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdobeAnalytics/Pods-AdobeAnalytics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		17747FCE20B8B74B00FC8405 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				178002C420C602BA006B4E47 /* SimpleTrackingViewController.swift in Sources */,
 				17747FD820B8B74B00FC8405 /* ViewController.swift in Sources */,
 				17747FD620B8B74B00FC8405 /* AppDelegate.swift in Sources */,
 			);
@@ -278,6 +351,7 @@
 		};
 		17747FE520B8B74D00FC8405 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9ECC6B8A105561361585F00 /* Pods-AdobeAnalytics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +370,7 @@
 		};
 		17747FE620B8B74D00FC8405 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39AB95F2842C81B453A1ED60 /* Pods-AdobeAnalytics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
