@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,11 +20,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="oQ1-Az-Idm">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="oQ1-Az-Idm">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oQ1-Az-Idm" id="k4d-x0-WzL">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -87,6 +88,124 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZiD-Vu-per" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2960.8000000000002" y="132.68365817091455"/>
+        </scene>
+        <!--In-App Messages-->
+        <scene sceneID="5Xv-Q5-44d">
+            <objects>
+                <viewController storyboardIdentifier="In-App Messages" title="In-App Messages" id="3g8-HF-cSn" customClass="InAppMessageViewController" customModule="AdobeAnalytics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ba9-4P-3Ii">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tku-tw-GkC">
+                                <rect key="frame" x="16" y="132" width="343" height="30"/>
+                                <state key="normal" title="Full Screen Message"/>
+                                <connections>
+                                    <action selector="showFullScreenMessage" destination="3g8-HF-cSn" eventType="touchUpInside" id="d9O-eh-TBD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1m-xD-GUV">
+                                <rect key="frame" x="16" y="177" width="343" height="30"/>
+                                <state key="normal" title="Alert Message"/>
+                                <connections>
+                                    <action selector="showAlertMessage" destination="3g8-HF-cSn" eventType="touchUpInside" id="rJd-4q-8x3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deY-72-0ec">
+                                <rect key="frame" x="16" y="229" width="343" height="30"/>
+                                <state key="normal" title="Local Notification Message"/>
+                                <connections>
+                                    <action selector="showLocalNotificationMessage" destination="3g8-HF-cSn" eventType="touchUpInside" id="oUf-cA-qpR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jG-T5-veR">
+                                <rect key="frame" x="16" y="282" width="343" height="30"/>
+                                <state key="normal" title="Interactive Notification Message"/>
+                                <connections>
+                                    <action selector="showInteractiveMessage" destination="3g8-HF-cSn" eventType="touchUpInside" id="qQf-my-QN6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tku-tw-GkC" firstAttribute="trailing" secondItem="ba9-4P-3Ii" secondAttribute="trailingMargin" id="7tl-3d-wYi"/>
+                            <constraint firstItem="deY-72-0ec" firstAttribute="trailing" secondItem="0jG-T5-veR" secondAttribute="trailing" id="ASw-Fr-g5s"/>
+                            <constraint firstItem="deY-72-0ec" firstAttribute="top" secondItem="w1m-xD-GUV" secondAttribute="bottom" constant="22" id="Bp9-zf-zHf"/>
+                            <constraint firstItem="w1m-xD-GUV" firstAttribute="leading" secondItem="deY-72-0ec" secondAttribute="leading" id="Ce9-Gq-KRk"/>
+                            <constraint firstItem="tku-tw-GkC" firstAttribute="top" secondItem="HEB-V5-tVT" secondAttribute="top" constant="112" id="Nra-Om-9Ey"/>
+                            <constraint firstItem="0jG-T5-veR" firstAttribute="top" secondItem="deY-72-0ec" secondAttribute="bottom" constant="23" id="RE4-Al-Q9p"/>
+                            <constraint firstItem="w1m-xD-GUV" firstAttribute="trailing" secondItem="deY-72-0ec" secondAttribute="trailing" id="Wg8-EN-IZx"/>
+                            <constraint firstItem="tku-tw-GkC" firstAttribute="leading" secondItem="w1m-xD-GUV" secondAttribute="leading" id="ZOB-OV-tCQ"/>
+                            <constraint firstItem="tku-tw-GkC" firstAttribute="leading" secondItem="ba9-4P-3Ii" secondAttribute="leadingMargin" id="lhe-63-K69"/>
+                            <constraint firstItem="deY-72-0ec" firstAttribute="leading" secondItem="0jG-T5-veR" secondAttribute="leading" id="nHi-SG-LnP"/>
+                            <constraint firstItem="w1m-xD-GUV" firstAttribute="top" secondItem="tku-tw-GkC" secondAttribute="bottom" constant="15" id="sd6-y2-euY"/>
+                            <constraint firstItem="tku-tw-GkC" firstAttribute="trailing" secondItem="w1m-xD-GUV" secondAttribute="trailing" id="uDF-iu-L9a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HEB-V5-tVT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cw4-56-ukB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3767" y="140"/>
+        </scene>
+        <!--Privacy-->
+        <scene sceneID="Yyn-06-cBA">
+            <objects>
+                <viewController storyboardIdentifier="Privacy Example" title="Privacy" id="Baf-IB-fDk" customClass="PrivacyViewController" customModule="AdobeAnalytics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y20-8M-Gir">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ep5-cK-S5w">
+                                <rect key="frame" x="16" y="165" width="343" height="30"/>
+                                <state key="normal" title="Set privacy to Opt In"/>
+                                <connections>
+                                    <action selector="setPrivacyOptIn" destination="Baf-IB-fDk" eventType="touchUpInside" id="8y0-pa-T3v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xs9-iy-TtT">
+                                <rect key="frame" x="16" y="213" width="343" height="30"/>
+                                <state key="normal" title="Set privacy to Opt Out"/>
+                                <connections>
+                                    <action selector="setPrivacyOptOut" destination="Baf-IB-fDk" eventType="touchUpInside" id="RCp-kn-Fjl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImI-VN-zUC">
+                                <rect key="frame" x="16" y="262" width="343" height="30"/>
+                                <state key="normal" title="Set privacy to Opt Unkown"/>
+                                <connections>
+                                    <action selector="setPrivacyOptUnknown" destination="Baf-IB-fDk" eventType="touchUpInside" id="eaq-OG-gHH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5Y-Qk-pye">
+                                <rect key="frame" x="16" y="394" width="343" height="30"/>
+                                <state key="normal" title="Send trackAction:data: hit"/>
+                                <connections>
+                                    <action selector="sendTrackAction" destination="Baf-IB-fDk" eventType="touchUpInside" id="XeV-FO-Z0c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ImI-VN-zUC" firstAttribute="trailing" secondItem="M5Y-Qk-pye" secondAttribute="trailing" id="6ZG-po-aqc"/>
+                            <constraint firstItem="xs9-iy-TtT" firstAttribute="leading" secondItem="ImI-VN-zUC" secondAttribute="leading" id="87X-07-8ih"/>
+                            <constraint firstItem="Ep5-cK-S5w" firstAttribute="trailing" secondItem="Y20-8M-Gir" secondAttribute="trailingMargin" id="Dzy-Sg-q9M"/>
+                            <constraint firstItem="ImI-VN-zUC" firstAttribute="leading" secondItem="M5Y-Qk-pye" secondAttribute="leading" id="EMY-zG-lxE"/>
+                            <constraint firstItem="xs9-iy-TtT" firstAttribute="top" secondItem="Ep5-cK-S5w" secondAttribute="bottom" constant="18" id="RFf-Zv-wc9"/>
+                            <constraint firstItem="Ep5-cK-S5w" firstAttribute="leading" secondItem="Y20-8M-Gir" secondAttribute="leadingMargin" id="XWB-KX-6xP"/>
+                            <constraint firstItem="Ep5-cK-S5w" firstAttribute="leading" secondItem="xs9-iy-TtT" secondAttribute="leading" id="cjU-mx-qEc"/>
+                            <constraint firstItem="xs9-iy-TtT" firstAttribute="trailing" secondItem="ImI-VN-zUC" secondAttribute="trailing" id="f6B-VN-kPu"/>
+                            <constraint firstItem="ImI-VN-zUC" firstAttribute="top" secondItem="xs9-iy-TtT" secondAttribute="bottom" constant="19" id="ffM-c0-GRI"/>
+                            <constraint firstItem="Ep5-cK-S5w" firstAttribute="trailing" secondItem="xs9-iy-TtT" secondAttribute="trailing" id="hrJ-4k-fVV"/>
+                            <constraint firstItem="Ep5-cK-S5w" firstAttribute="top" secondItem="YXU-ha-v4c" secondAttribute="top" constant="145" id="nEs-xC-ILF"/>
+                            <constraint firstItem="YXU-ha-v4c" firstAttribute="bottom" secondItem="M5Y-Qk-pye" secondAttribute="bottom" constant="243" id="rIb-oN-btK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YXU-ha-v4c"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rwe-YW-fds" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4542" y="140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="a7l-lI-nmp">
