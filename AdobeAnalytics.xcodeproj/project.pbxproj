@@ -8,25 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		17747FD620B8B74B00FC8405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17747FD520B8B74B00FC8405 /* AppDelegate.swift */; };
-		17747FD820B8B74B00FC8405 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17747FD720B8B74B00FC8405 /* ViewController.swift */; };
 		17747FDB20B8B74B00FC8405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17747FD920B8B74B00FC8405 /* Main.storyboard */; };
 		17747FDD20B8B74D00FC8405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17747FDC20B8B74D00FC8405 /* Assets.xcassets */; };
 		17747FE020B8B74D00FC8405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17747FDE20B8B74D00FC8405 /* LaunchScreen.storyboard */; };
 		178002C420C602BA006B4E47 /* SimpleTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178002C320C602BA006B4E47 /* SimpleTrackingViewController.swift */; };
 		178002C620C60455006B4E47 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 178002C520C60455006B4E47 /* ADBMobileConfig.json */; };
+		17A5066720C6446D00C7E594 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5066620C6446D00C7E594 /* MenuTableViewController.swift */; };
 		44F83529BEA91108CE15CE11 /* Pods_AdobeAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63594D50CD6B4F686E5200E /* Pods_AdobeAnalytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17747FD220B8B74B00FC8405 /* AdobeAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdobeAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17747FD520B8B74B00FC8405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17747FD720B8B74B00FC8405 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		17747FDA20B8B74B00FC8405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17747FDC20B8B74D00FC8405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17747FDF20B8B74D00FC8405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17747FE120B8B74D00FC8405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		178002C320C602BA006B4E47 /* SimpleTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTrackingViewController.swift; sourceTree = "<group>"; };
 		178002C520C60455006B4E47 /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
+		17A5066620C6446D00C7E594 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		39AB95F2842C81B453A1ED60 /* Pods-AdobeAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdobeAnalytics.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdobeAnalytics/Pods-AdobeAnalytics.release.xcconfig"; sourceTree = "<group>"; };
 		C63594D50CD6B4F686E5200E /* Pods_AdobeAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdobeAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9ECC6B8A105561361585F00 /* Pods-AdobeAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdobeAnalytics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdobeAnalytics/Pods-AdobeAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 				178002C520C60455006B4E47 /* ADBMobileConfig.json */,
 				17747FD520B8B74B00FC8405 /* AppDelegate.swift */,
 				178002C320C602BA006B4E47 /* SimpleTrackingViewController.swift */,
-				17747FD720B8B74B00FC8405 /* ViewController.swift */,
+				17A5066620C6446D00C7E594 /* MenuTableViewController.swift */,
 				17747FD920B8B74B00FC8405 /* Main.storyboard */,
 				17747FDC20B8B74D00FC8405 /* Assets.xcassets */,
 				17747FDE20B8B74D00FC8405 /* LaunchScreen.storyboard */,
@@ -207,8 +207,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A5066720C6446D00C7E594 /* MenuTableViewController.swift in Sources */,
 				178002C420C602BA006B4E47 /* SimpleTrackingViewController.swift in Sources */,
-				17747FD820B8B74B00FC8405 /* ViewController.swift in Sources */,
 				17747FD620B8B74B00FC8405 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

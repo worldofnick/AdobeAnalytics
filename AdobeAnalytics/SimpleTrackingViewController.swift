@@ -12,12 +12,6 @@ import AdobeMobileSDK
 class SimpleTrackingViewController: UIViewController {
     
     @IBOutlet weak var usernameTextField: UITextField!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
 
     @IBAction func trackStateTapped() {
         var contextData = [String: Any]()
