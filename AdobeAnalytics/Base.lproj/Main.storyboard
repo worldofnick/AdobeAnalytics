@@ -42,7 +42,7 @@
         <!--Simple Tracking-->
         <scene sceneID="rw6-xi-NaB">
             <objects>
-                <viewController storyboardIdentifier="simpleTracking" title="Simple Tracking" id="KkU-ML-9rQ" customClass="SimpleTrackingViewController" customModule="AdobeAnalytics" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Simple Tracking" title="Simple Tracking" id="KkU-ML-9rQ" customClass="SimpleTrackingViewController" customModule="AdobeAnalytics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NA8-g4-w4i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

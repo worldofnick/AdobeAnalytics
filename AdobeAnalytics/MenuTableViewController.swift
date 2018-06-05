@@ -10,8 +10,7 @@ import UIKit
 
 class MenuTableViewController: UITableViewController {
 
-    let menuItems = ["Simple Tracking"]
-    let menuControllersIdentifiers = ["simpleTracking"]
+    let menuItems = ["Simple Tracking", "In-App Messages", "Privacy Example", "Targeting Location", "Timed Actions Example", "Lifetime Value", "Media Example", "Postback Example"]
 
     // MARK: - Table view data source
 
@@ -32,7 +31,7 @@ class MenuTableViewController: UITableViewController {
  
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: menuControllersIdentifiers[indexPath.row])
+        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: menuItems[indexPath.row])
         self.navigationController?.pushViewController(controller, animated: true)
     }
 

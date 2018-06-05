@@ -67,14 +67,22 @@
 			children = (
 				178002C520C60455006B4E47 /* ADBMobileConfig.json */,
 				17747FD520B8B74B00FC8405 /* AppDelegate.swift */,
-				178002C320C602BA006B4E47 /* SimpleTrackingViewController.swift */,
 				17A5066620C6446D00C7E594 /* MenuTableViewController.swift */,
+				17A5066820C647AB00C7E594 /* Menu Controllers */,
 				17747FD920B8B74B00FC8405 /* Main.storyboard */,
 				17747FDC20B8B74D00FC8405 /* Assets.xcassets */,
 				17747FDE20B8B74D00FC8405 /* LaunchScreen.storyboard */,
 				17747FE120B8B74D00FC8405 /* Info.plist */,
 			);
 			path = AdobeAnalytics;
+			sourceTree = "<group>";
+		};
+		17A5066820C647AB00C7E594 /* Menu Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				178002C320C602BA006B4E47 /* SimpleTrackingViewController.swift */,
+			);
+			path = "Menu Controllers";
 			sourceTree = "<group>";
 		};
 		3414827F097E75B4071DD813 /* Pods */ = {
