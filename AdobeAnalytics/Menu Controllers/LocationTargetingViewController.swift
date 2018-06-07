@@ -70,5 +70,26 @@ class LocationTargetingViewController: UIViewController {
             button.tintColor = color
         }
     }
-
+    
+    @IBAction func sendSeattle() {
+        sendLocationTrack(seattle)
+    }
+    
+    @IBAction func sendSanJose() {
+        sendLocationTrack(sanJose)
+    }
+    
+    @IBAction func sendNYC() {
+        sendLocationTrack(nyc)
+    }
+    
+    @IBAction func sendDallas() {
+        sendLocationTrack(dallas)
+    }
+    
+    @IBAction func sendMiami() {
+        sendLocationTrack(miami)
+    }
+    
+    
 }
