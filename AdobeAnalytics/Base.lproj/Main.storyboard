@@ -291,22 +291,37 @@ The config file is set to track offline, so when set to Opt Unknown, hits will b
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMK-cu-aOf">
                                 <rect key="frame" x="16" y="205" width="343" height="30"/>
                                 <state key="normal" title="Seattle, WA"/>
+                                <connections>
+                                    <action selector="sendSeattle" destination="Ecx-2p-MX3" eventType="touchUpInside" id="mrn-dI-xXq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLe-or-5XY">
                                 <rect key="frame" x="16" y="251" width="343" height="30"/>
                                 <state key="normal" title="San Jose, WA"/>
+                                <connections>
+                                    <action selector="sendSanJose" destination="Ecx-2p-MX3" eventType="touchUpInside" id="muo-Ke-vUg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4P2-Tj-4zo">
                                 <rect key="frame" x="16" y="306" width="343" height="30"/>
                                 <state key="normal" title="New York City, NY"/>
+                                <connections>
+                                    <action selector="sendNYC" destination="Ecx-2p-MX3" eventType="touchUpInside" id="LjM-wD-pg6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sds-kU-YYf">
                                 <rect key="frame" x="16" y="359" width="343" height="30"/>
                                 <state key="normal" title="Dallas, TX"/>
+                                <connections>
+                                    <action selector="sendDallas" destination="Ecx-2p-MX3" eventType="touchUpInside" id="6vs-ju-BQq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKK-FR-2g3">
                                 <rect key="frame" x="16" y="414" width="343" height="30"/>
                                 <state key="normal" title="Miami, FL"/>
+                                <connections>
+                                    <action selector="sendMiami" destination="Ecx-2p-MX3" eventType="touchUpInside" id="zUz-O9-lwg"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Use Adobe Target and Points of Interest trackLocaiton:data: to target your users based on their geographical location." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jl4-Gx-UHI">
                                 <rect key="frame" x="67" y="87" width="240" height="92"/>
