@@ -133,28 +133,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tku-tw-GkC">
-                                <rect key="frame" x="16" y="245" width="343" height="30"/>
+                                <rect key="frame" x="16" y="240" width="343" height="30"/>
                                 <state key="normal" title="Full Screen Message"/>
                                 <connections>
                                     <action selector="showFullScreenMessage" destination="3g8-HF-cSn" eventType="touchUpInside" id="d9O-eh-TBD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1m-xD-GUV">
-                                <rect key="frame" x="16" y="290" width="343" height="30"/>
+                                <rect key="frame" x="16" y="285" width="343" height="30"/>
                                 <state key="normal" title="Alert Message"/>
                                 <connections>
                                     <action selector="showAlertMessage" destination="3g8-HF-cSn" eventType="touchUpInside" id="rJd-4q-8x3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deY-72-0ec">
-                                <rect key="frame" x="16" y="342" width="343" height="30"/>
+                                <rect key="frame" x="16" y="337" width="343" height="30"/>
                                 <state key="normal" title="Local Notification Message"/>
                                 <connections>
                                     <action selector="showLocalNotificationMessage" destination="3g8-HF-cSn" eventType="touchUpInside" id="oUf-cA-qpR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jG-T5-veR">
-                                <rect key="frame" x="16" y="395" width="343" height="30"/>
+                                <rect key="frame" x="16" y="390" width="343" height="30"/>
                                 <state key="normal" title="Interactive Notification Message"/>
                                 <connections>
                                     <action selector="showInteractiveMessage" destination="3g8-HF-cSn" eventType="touchUpInside" id="qQf-my-QN6"/>
@@ -186,8 +186,8 @@
                             <constraint firstItem="tku-tw-GkC" firstAttribute="trailing" secondItem="w1m-xD-GUV" secondAttribute="trailing" id="TFt-xd-U9Y"/>
                             <constraint firstItem="0jG-T5-veR" firstAttribute="top" secondItem="deY-72-0ec" secondAttribute="bottom" constant="23" id="U4u-YA-Fvp"/>
                             <constraint firstItem="wKN-gL-Teg" firstAttribute="leading" secondItem="HEB-V5-tVT" secondAttribute="leading" constant="67" id="ULP-xM-WO4"/>
-                            <constraint firstItem="UGr-nV-nWx" firstAttribute="top" secondItem="0jG-T5-veR" secondAttribute="bottom" constant="10" id="URW-hx-0h7"/>
-                            <constraint firstItem="tku-tw-GkC" firstAttribute="top" secondItem="wKN-gL-Teg" secondAttribute="bottom" constant="19" id="VzK-OM-iZN"/>
+                            <constraint firstItem="UGr-nV-nWx" firstAttribute="top" secondItem="0jG-T5-veR" secondAttribute="bottom" constant="15" id="URW-hx-0h7"/>
+                            <constraint firstItem="tku-tw-GkC" firstAttribute="top" secondItem="wKN-gL-Teg" secondAttribute="bottom" constant="14" id="VzK-OM-iZN"/>
                             <constraint firstItem="deY-72-0ec" firstAttribute="trailing" secondItem="0jG-T5-veR" secondAttribute="trailing" id="Xgh-5T-MeF"/>
                             <constraint firstItem="HEB-V5-tVT" firstAttribute="bottom" secondItem="UGr-nV-nWx" secondAttribute="bottom" constant="167" id="YZk-l7-EbQ"/>
                             <constraint firstItem="w1m-xD-GUV" firstAttribute="top" secondItem="tku-tw-GkC" secondAttribute="bottom" constant="15" id="b8y-zo-EUg"/>
@@ -279,6 +279,73 @@ The config file is set to track offline, so when set to Opt Unknown, hits will b
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rwe-YW-fds" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4541.6000000000004" y="139.880059970015"/>
+        </scene>
+        <!--Targeting Location-->
+        <scene sceneID="RuX-aG-baB">
+            <objects>
+                <viewController storyboardIdentifier="Targeting Location" title="Targeting Location" id="Ecx-2p-MX3" customClass="LocationTargetingViewController" customModule="AdobeAnalytics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LL0-Dc-NgE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMK-cu-aOf">
+                                <rect key="frame" x="16" y="205" width="343" height="30"/>
+                                <state key="normal" title="Seattle, WA"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLe-or-5XY">
+                                <rect key="frame" x="16" y="251" width="343" height="30"/>
+                                <state key="normal" title="San Jose, WA"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4P2-Tj-4zo">
+                                <rect key="frame" x="16" y="306" width="343" height="30"/>
+                                <state key="normal" title="New York City, NY"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sds-kU-YYf">
+                                <rect key="frame" x="16" y="359" width="343" height="30"/>
+                                <state key="normal" title="Dallas, TX"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKK-FR-2g3">
+                                <rect key="frame" x="16" y="414" width="343" height="30"/>
+                                <state key="normal" title="Miami, FL"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Use Adobe Target and Points of Interest trackLocaiton:data: to target your users based on their geographical location." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jl4-Gx-UHI">
+                                <rect key="frame" x="67" y="87" width="240" height="92"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jl4-Gx-UHI" firstAttribute="top" secondItem="fPf-u4-lyf" secondAttribute="top" constant="67" id="20S-OB-lur"/>
+                            <constraint firstItem="fKK-FR-2g3" firstAttribute="top" secondItem="Sds-kU-YYf" secondAttribute="bottom" constant="25" id="6YH-vi-Y3i"/>
+                            <constraint firstItem="gMK-cu-aOf" firstAttribute="trailing" secondItem="LL0-Dc-NgE" secondAttribute="trailingMargin" id="ATj-iq-vHW"/>
+                            <constraint firstItem="4P2-Tj-4zo" firstAttribute="trailing" secondItem="Sds-kU-YYf" secondAttribute="trailing" id="Bwh-KH-z6E"/>
+                            <constraint firstItem="gMK-cu-aOf" firstAttribute="trailing" secondItem="jLe-or-5XY" secondAttribute="trailing" id="CrP-eW-SHl"/>
+                            <constraint firstItem="fPf-u4-lyf" firstAttribute="bottom" secondItem="fKK-FR-2g3" secondAttribute="bottom" constant="223" id="GMt-IK-qeF"/>
+                            <constraint firstItem="4P2-Tj-4zo" firstAttribute="top" secondItem="jLe-or-5XY" secondAttribute="bottom" constant="25" id="Hz6-UT-4uA"/>
+                            <constraint firstItem="Sds-kU-YYf" firstAttribute="top" secondItem="4P2-Tj-4zo" secondAttribute="bottom" constant="23" id="IFh-3v-FAj"/>
+                            <constraint firstItem="jLe-or-5XY" firstAttribute="top" secondItem="gMK-cu-aOf" secondAttribute="bottom" constant="16" id="QIB-CR-cY0"/>
+                            <constraint firstItem="jLe-or-5XY" firstAttribute="trailing" secondItem="4P2-Tj-4zo" secondAttribute="trailing" id="Vf7-J1-sZq"/>
+                            <constraint firstItem="Jl4-Gx-UHI" firstAttribute="centerX" secondItem="gMK-cu-aOf" secondAttribute="centerX" id="cey-CD-Wyd"/>
+                            <constraint firstItem="gMK-cu-aOf" firstAttribute="leading" secondItem="LL0-Dc-NgE" secondAttribute="leadingMargin" id="eCl-90-Tq8"/>
+                            <constraint firstItem="Jl4-Gx-UHI" firstAttribute="leading" secondItem="fPf-u4-lyf" secondAttribute="leading" constant="67" id="j5W-8T-wpb"/>
+                            <constraint firstItem="4P2-Tj-4zo" firstAttribute="leading" secondItem="Sds-kU-YYf" secondAttribute="leading" id="ji4-0f-HPa"/>
+                            <constraint firstItem="gMK-cu-aOf" firstAttribute="leading" secondItem="jLe-or-5XY" secondAttribute="leading" id="l9z-ED-lb3"/>
+                            <constraint firstItem="Sds-kU-YYf" firstAttribute="leading" secondItem="fKK-FR-2g3" secondAttribute="leading" id="ms0-hd-pMv"/>
+                            <constraint firstItem="gMK-cu-aOf" firstAttribute="top" secondItem="Jl4-Gx-UHI" secondAttribute="bottom" constant="26" id="poM-bs-ynq"/>
+                            <constraint firstItem="Sds-kU-YYf" firstAttribute="trailing" secondItem="fKK-FR-2g3" secondAttribute="trailing" id="tfh-Ym-Ud2"/>
+                            <constraint firstItem="jLe-or-5XY" firstAttribute="leading" secondItem="4P2-Tj-4zo" secondAttribute="leading" id="vge-Tf-okq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fPf-u4-lyf"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="locationButtons" destination="fKK-FR-2g3" collectionClass="NSMutableArray" id="4yo-E5-IvI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yfm-aD-4F8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5421.6000000000004" y="139.880059970015"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="a7l-lI-nmp">
