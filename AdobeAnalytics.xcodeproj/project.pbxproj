@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17112FA720C924B70058861A /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17112FA620C924B70058861A /* UIColor+Hex.swift */; };
 		17747FD620B8B74B00FC8405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17747FD520B8B74B00FC8405 /* AppDelegate.swift */; };
 		17747FDB20B8B74B00FC8405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17747FD920B8B74B00FC8405 /* Main.storyboard */; };
 		17747FDD20B8B74D00FC8405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17747FDC20B8B74D00FC8405 /* Assets.xcassets */; };
@@ -16,10 +17,12 @@
 		17A5066720C6446D00C7E594 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5066620C6446D00C7E594 /* MenuTableViewController.swift */; };
 		17A5066A20C6595400C7E594 /* InAppMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5066920C6595400C7E594 /* InAppMessageViewController.swift */; };
 		17A5066C20C673EF00C7E594 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5066B20C673EF00C7E594 /* PrivacyViewController.swift */; };
+		17CC996020C7423A00A02F26 /* LocationTargetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CC995F20C7423A00A02F26 /* LocationTargetingViewController.swift */; };
 		44F83529BEA91108CE15CE11 /* Pods_AdobeAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63594D50CD6B4F686E5200E /* Pods_AdobeAnalytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17112FA620C924B70058861A /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+Hex.swift"; path = "AdobeAnalytics/UIColor+Hex.swift"; sourceTree = SOURCE_ROOT; };
 		17747FD220B8B74B00FC8405 /* AdobeAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdobeAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17747FD520B8B74B00FC8405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17747FDA20B8B74B00FC8405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 		17A5066620C6446D00C7E594 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		17A5066920C6595400C7E594 /* InAppMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppMessageViewController.swift; sourceTree = "<group>"; };
 		17A5066B20C673EF00C7E594 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		17CC995F20C7423A00A02F26 /* LocationTargetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTargetingViewController.swift; sourceTree = "<group>"; };
 		39AB95F2842C81B453A1ED60 /* Pods-AdobeAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdobeAnalytics.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdobeAnalytics/Pods-AdobeAnalytics.release.xcconfig"; sourceTree = "<group>"; };
 		C63594D50CD6B4F686E5200E /* Pods_AdobeAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdobeAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9ECC6B8A105561361585F00 /* Pods-AdobeAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdobeAnalytics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdobeAnalytics/Pods-AdobeAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 				178002C320C602BA006B4E47 /* SimpleTrackingViewController.swift */,
 				17A5066920C6595400C7E594 /* InAppMessageViewController.swift */,
 				17A5066B20C673EF00C7E594 /* PrivacyViewController.swift */,
+				17CC995F20C7423A00A02F26 /* LocationTargetingViewController.swift */,
+				17112FA620C924B70058861A /* UIColor+Hex.swift */,
 			);
 			path = "Menu Controllers";
 			sourceTree = "<group>";
@@ -221,11 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17112FA720C924B70058861A /* UIColor+Hex.swift in Sources */,
 				17A5066720C6446D00C7E594 /* MenuTableViewController.swift in Sources */,
 				178002C420C602BA006B4E47 /* SimpleTrackingViewController.swift in Sources */,
 				17A5066C20C673EF00C7E594 /* PrivacyViewController.swift in Sources */,
 				17A5066A20C6595400C7E594 /* InAppMessageViewController.swift in Sources */,
 				17747FD620B8B74B00FC8405 /* AppDelegate.swift in Sources */,
+				17CC996020C7423A00A02F26 /* LocationTargetingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

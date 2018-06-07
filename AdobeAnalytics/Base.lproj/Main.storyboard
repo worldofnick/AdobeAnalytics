@@ -355,7 +355,11 @@ The config file is set to track offline, so when set to Opt Unknown, hits will b
                         <viewLayoutGuide key="safeArea" id="fPf-u4-lyf"/>
                     </view>
                     <connections>
-                        <outletCollection property="locationButtons" destination="fKK-FR-2g3" collectionClass="NSMutableArray" id="4yo-E5-IvI"/>
+                        <outletCollection property="locationButtons" destination="4P2-Tj-4zo" collectionClass="NSMutableArray" id="Hch-1v-fuf"/>
+                        <outletCollection property="locationButtons" destination="fKK-FR-2g3" collectionClass="NSMutableArray" id="qjr-cH-A8r"/>
+                        <outletCollection property="locationButtons" destination="Sds-kU-YYf" collectionClass="NSMutableArray" id="ijh-MU-dRL"/>
+                        <outletCollection property="locationButtons" destination="jLe-or-5XY" collectionClass="NSMutableArray" id="nlL-gA-8wr"/>
+                        <outletCollection property="locationButtons" destination="gMK-cu-aOf" collectionClass="NSMutableArray" id="sjo-Nk-vYB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yfm-aD-4F8" userLabel="First Responder" sceneMemberID="firstResponder"/>

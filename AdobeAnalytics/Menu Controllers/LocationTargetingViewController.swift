@@ -61,7 +61,7 @@ class LocationTargetingViewController: UIViewController {
                 return
             }
 
-            self.performSelector(onMainThread: #selector(self.updateButtonTint(_:)), with: colors[0], waitUntilDone: false)
+            self.performSelector(onMainThread: #selector(self.updateButtonTint(_:)), with: UIColor(hexString: colors[0]), waitUntilDone: false)
         }
     }
     
