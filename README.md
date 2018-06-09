@@ -1,2 +1,2 @@
 # AdobeAnalytics
-Learning about the AdobeAnalytics SDK.
+Learning about the Adobe Analytics SDK.
