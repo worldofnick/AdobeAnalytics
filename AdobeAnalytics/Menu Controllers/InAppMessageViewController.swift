@@ -19,6 +19,13 @@ class InAppMessageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /*
+         * Adobe Tracking - Analytics
+         *
+         * call to trackState:data: for view states report
+         * trackState:data: increments the page view
+         */
         ADBMobile.trackState("In-App Message Example", data: nil)
     }
     
