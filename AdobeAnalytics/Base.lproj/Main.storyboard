@@ -366,10 +366,10 @@ The config file is set to track offline, so when set to Opt Unknown, hits will b
             </objects>
             <point key="canvasLocation" x="5421.6000000000004" y="139.880059970015"/>
         </scene>
-        <!--Time Action View Controller-->
+        <!--Timed Actions-->
         <scene sceneID="UhU-9N-mDA">
             <objects>
-                <viewController storyboardIdentifier="Timed Actions Example" id="5TU-YH-Ufz" customClass="TimeActionViewController" customModule="AdobeAnalytics" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Timed Actions Example" title="Timed Actions" id="5TU-YH-Ufz" customClass="TimeActionViewController" customModule="AdobeAnalytics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="swk-dE-InN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -475,6 +475,92 @@ Try backgrounding the app while a timed action is running, then stopping the act
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2eU-at-3KU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6264.8000000000002" y="139.880059970015"/>
+        </scene>
+        <!--Lifetime Value-->
+        <scene sceneID="i8R-qW-fe4">
+            <objects>
+                <viewController storyboardIdentifier="Lifetime Value" title="Lifetime Value" id="vtY-7f-r4T" customClass="LifetimeValueViewController" customModule="AdobeAnalytics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Ve-kN-RIK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Use Lifetime Value to track the value of a user through the lifetime of use in your application." textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQI-Ou-U2r">
+                                <rect key="frame" x="67" y="79" width="240" height="73"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lifetime Value:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rep-vv-dRK">
+                                <rect key="frame" x="67" y="170" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cnh-fy-eyg">
+                                <rect key="frame" x="145" y="208" width="83" height="30"/>
+                                <state key="normal" title="Link Clicked"/>
+                                <connections>
+                                    <action selector="linkClicked" destination="vtY-7f-r4T" eventType="touchUpInside" id="QeJ-4V-z3k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hg4-wg-quq">
+                                <rect key="frame" x="133" y="246" width="107" height="30"/>
+                                <state key="normal" title="Purchase Made"/>
+                                <connections>
+                                    <action selector="purchaseMade" destination="vtY-7f-r4T" eventType="touchUpInside" id="3ib-fZ-hxh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkc-vz-YGq">
+                                <rect key="frame" x="130" y="284" width="113" height="30"/>
+                                <state key="normal" title="Media Uploaded"/>
+                                <connections>
+                                    <action selector="mediaUploaded" destination="vtY-7f-r4T" eventType="touchUpInside" id="1sX-fM-QhI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icl-fD-Kim">
+                                <rect key="frame" x="138" y="322" width="96" height="30"/>
+                                <state key="normal" title="Media Viewed"/>
+                                <connections>
+                                    <action selector="mediaViewed" destination="vtY-7f-r4T" eventType="touchUpInside" id="V5T-bU-W7B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHY-cX-qbQ">
+                                <rect key="frame" x="121" y="360" width="132" height="30"/>
+                                <state key="normal" title="Social Engagement"/>
+                                <connections>
+                                    <action selector="socialEngagement" destination="vtY-7f-r4T" eventType="touchUpInside" id="xxq-dt-HTN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hg4-wg-quq" firstAttribute="top" secondItem="Cnh-fy-eyg" secondAttribute="bottom" constant="8" symbolic="YES" id="1Ui-hf-0mV"/>
+                            <constraint firstItem="icl-fD-Kim" firstAttribute="top" secondItem="Bkc-vz-YGq" secondAttribute="bottom" constant="8" symbolic="YES" id="2Pn-fw-Pu5"/>
+                            <constraint firstItem="rep-vv-dRK" firstAttribute="centerX" secondItem="Cnh-fy-eyg" secondAttribute="centerX" id="3IA-hP-18q"/>
+                            <constraint firstItem="Hg4-wg-quq" firstAttribute="centerX" secondItem="Bkc-vz-YGq" secondAttribute="centerX" id="BS0-7M-O6w"/>
+                            <constraint firstItem="Bkc-vz-YGq" firstAttribute="centerX" secondItem="icl-fD-Kim" secondAttribute="centerX" id="JQ1-Cr-eMb"/>
+                            <constraint firstItem="aQI-Ou-U2r" firstAttribute="trailing" secondItem="rep-vv-dRK" secondAttribute="trailing" id="M4Y-df-5ia"/>
+                            <constraint firstItem="bHY-cX-qbQ" firstAttribute="top" secondItem="icl-fD-Kim" secondAttribute="bottom" constant="8" symbolic="YES" id="MAI-6A-pwD"/>
+                            <constraint firstItem="Cnh-fy-eyg" firstAttribute="top" secondItem="rep-vv-dRK" secondAttribute="bottom" constant="17" id="OND-fL-mdk"/>
+                            <constraint firstItem="aQI-Ou-U2r" firstAttribute="centerX" secondItem="8Ve-kN-RIK" secondAttribute="centerX" id="Odc-0b-nuU"/>
+                            <constraint firstItem="aQI-Ou-U2r" firstAttribute="top" secondItem="Ayb-bq-fMO" secondAttribute="top" constant="59" id="Vx2-pj-fHw"/>
+                            <constraint firstItem="Bkc-vz-YGq" firstAttribute="centerX" secondItem="bHY-cX-qbQ" secondAttribute="centerX" id="asH-cQ-9cb"/>
+                            <constraint firstItem="aQI-Ou-U2r" firstAttribute="leading" secondItem="rep-vv-dRK" secondAttribute="leading" id="bS0-Sk-eWx"/>
+                            <constraint firstItem="Ayb-bq-fMO" firstAttribute="bottom" secondItem="bHY-cX-qbQ" secondAttribute="bottom" constant="277" id="dBZ-Xb-HQy"/>
+                            <constraint firstItem="aQI-Ou-U2r" firstAttribute="leading" secondItem="Ayb-bq-fMO" secondAttribute="leading" constant="67" id="qay-ui-B2L"/>
+                            <constraint firstItem="Bkc-vz-YGq" firstAttribute="top" secondItem="Hg4-wg-quq" secondAttribute="bottom" constant="8" symbolic="YES" id="tvm-lG-qeF"/>
+                            <constraint firstItem="Cnh-fy-eyg" firstAttribute="centerX" secondItem="Hg4-wg-quq" secondAttribute="centerX" id="zoC-j3-LTV"/>
+                            <constraint firstItem="rep-vv-dRK" firstAttribute="top" secondItem="aQI-Ou-U2r" secondAttribute="bottom" constant="18" id="zu4-dH-UqP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ayb-bq-fMO"/>
+                    </view>
+                    <connections>
+                        <outlet property="lifetimeValueLabel" destination="rep-vv-dRK" id="qwe-0m-rs0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mPN-41-vxj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7041" y="140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="a7l-lI-nmp">
