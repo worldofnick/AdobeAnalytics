@@ -366,6 +366,116 @@ The config file is set to track offline, so when set to Opt Unknown, hits will b
             </objects>
             <point key="canvasLocation" x="5421.6000000000004" y="139.880059970015"/>
         </scene>
+        <!--Time Action View Controller-->
+        <scene sceneID="UhU-9N-mDA">
+            <objects>
+                <viewController storyboardIdentifier="Timed Actions Example" id="5TU-YH-Ufz" customClass="TimeActionViewController" customModule="AdobeAnalytics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="swk-dE-InN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyt-Oj-kSk">
+                                <rect key="frame" x="45" y="103" width="102" height="30"/>
+                                <state key="normal" title="Start Action #1"/>
+                                <connections>
+                                    <action selector="startAction1" destination="5TU-YH-Ufz" eventType="touchUpInside" id="QmG-bi-ObG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICM-EA-5rW">
+                                <rect key="frame" x="221" y="103" width="100" height="30"/>
+                                <state key="normal" title="Stop Action #1"/>
+                                <connections>
+                                    <action selector="stopAction1" destination="5TU-YH-Ufz" eventType="touchUpInside" id="V4P-7K-PJi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In-app Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eK3-FJ-Uvt">
+                                <rect key="frame" x="45" y="144" width="276" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCJ-mF-emO">
+                                <rect key="frame" x="45" y="182" width="276" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5x-5d-eak">
+                                <rect key="frame" x="44" y="221" width="104" height="30"/>
+                                <state key="normal" title="Start Action #2"/>
+                                <connections>
+                                    <action selector="startAction2" destination="5TU-YH-Ufz" eventType="touchUpInside" id="fZO-7b-YXj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6j-ve-z2K">
+                                <rect key="frame" x="220" y="221" width="102" height="30"/>
+                                <state key="normal" title="Stop Action #2"/>
+                                <connections>
+                                    <action selector="stopAction2" destination="5TU-YH-Ufz" eventType="touchUpInside" id="czh-tb-UXw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In-app Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcA-6C-dKI">
+                                <rect key="frame" x="45" y="262" width="276" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOF-ay-6qm">
+                                <rect key="frame" x="45" y="300" width="276" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kic-fs-K1S">
+                                <rect key="frame" x="45" y="346" width="276" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Starting a timed action that is already running will restart that action.  
+
+Try backgrounding the app while a timed action is running, then stopping the action after relaunching the app.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kcA-6C-dKI" firstAttribute="top" secondItem="P5x-5d-eak" secondAttribute="bottom" constant="11" id="0X1-Da-Sjp"/>
+                            <constraint firstItem="eK3-FJ-Uvt" firstAttribute="top" secondItem="uyt-Oj-kSk" secondAttribute="bottom" constant="11" id="0da-sS-uCZ"/>
+                            <constraint firstItem="VCJ-mF-emO" firstAttribute="leading" secondItem="kcA-6C-dKI" secondAttribute="leading" id="3m5-Xn-il0"/>
+                            <constraint firstItem="eK3-FJ-Uvt" firstAttribute="leading" secondItem="VCJ-mF-emO" secondAttribute="leading" id="4r7-SM-PHR"/>
+                            <constraint firstItem="VCJ-mF-emO" firstAttribute="trailing" secondItem="kcA-6C-dKI" secondAttribute="trailing" id="9vM-QM-a1d"/>
+                            <constraint firstItem="kcA-6C-dKI" firstAttribute="leading" secondItem="nOF-ay-6qm" secondAttribute="leading" id="CVI-5d-tzh"/>
+                            <constraint firstItem="e6j-ve-z2K" firstAttribute="leading" secondItem="P5x-5d-eak" secondAttribute="trailing" constant="72" id="E1C-Gc-c4O"/>
+                            <constraint firstItem="nOF-ay-6qm" firstAttribute="trailing" secondItem="kic-fs-K1S" secondAttribute="trailing" id="LIQ-Tt-FIE"/>
+                            <constraint firstItem="LyT-lS-o0x" firstAttribute="bottom" secondItem="kic-fs-K1S" secondAttribute="bottom" constant="201" id="Njk-jw-8nk"/>
+                            <constraint firstItem="nOF-ay-6qm" firstAttribute="top" secondItem="kcA-6C-dKI" secondAttribute="bottom" constant="17" id="Oo5-4R-qR6"/>
+                            <constraint firstItem="nOF-ay-6qm" firstAttribute="leading" secondItem="kic-fs-K1S" secondAttribute="leading" id="Qx1-DW-nyd"/>
+                            <constraint firstItem="uyt-Oj-kSk" firstAttribute="top" secondItem="LyT-lS-o0x" secondAttribute="top" constant="83" id="TeK-dm-IRH"/>
+                            <constraint firstItem="ICM-EA-5rW" firstAttribute="centerX" secondItem="e6j-ve-z2K" secondAttribute="centerX" id="UtO-mS-qpd"/>
+                            <constraint firstItem="kic-fs-K1S" firstAttribute="top" secondItem="nOF-ay-6qm" secondAttribute="bottom" constant="25" id="Xum-Se-i3d"/>
+                            <constraint firstItem="uyt-Oj-kSk" firstAttribute="centerX" secondItem="P5x-5d-eak" secondAttribute="centerX" id="XxR-4n-4tL"/>
+                            <constraint firstItem="P5x-5d-eak" firstAttribute="baseline" secondItem="e6j-ve-z2K" secondAttribute="baseline" id="ZSE-pd-xR6"/>
+                            <constraint firstItem="VCJ-mF-emO" firstAttribute="top" secondItem="eK3-FJ-Uvt" secondAttribute="bottom" constant="17" id="bNz-rF-Kq9"/>
+                            <constraint firstItem="ICM-EA-5rW" firstAttribute="trailing" secondItem="eK3-FJ-Uvt" secondAttribute="trailing" id="c8b-S7-xFM"/>
+                            <constraint firstItem="kcA-6C-dKI" firstAttribute="trailing" secondItem="nOF-ay-6qm" secondAttribute="trailing" id="cZZ-vX-3Fp"/>
+                            <constraint firstItem="P5x-5d-eak" firstAttribute="top" secondItem="VCJ-mF-emO" secondAttribute="bottom" constant="18" id="dpX-Ry-VQ3"/>
+                            <constraint firstItem="P5x-5d-eak" firstAttribute="leading" secondItem="LyT-lS-o0x" secondAttribute="leading" constant="44" id="fsU-AL-gO5"/>
+                            <constraint firstItem="eK3-FJ-Uvt" firstAttribute="trailing" secondItem="VCJ-mF-emO" secondAttribute="trailing" id="fwB-UZ-s2c"/>
+                            <constraint firstItem="uyt-Oj-kSk" firstAttribute="leading" secondItem="eK3-FJ-Uvt" secondAttribute="leading" id="wgQ-W5-vue"/>
+                            <constraint firstItem="uyt-Oj-kSk" firstAttribute="baseline" secondItem="ICM-EA-5rW" secondAttribute="baseline" id="zkI-zn-KEL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LyT-lS-o0x"/>
+                    </view>
+                    <connections>
+                        <outlet property="inAppTimeLabel1" destination="eK3-FJ-Uvt" id="YPY-Gg-Bio"/>
+                        <outlet property="inAppTimeLabel2" destination="kcA-6C-dKI" id="4AM-yR-Izb"/>
+                        <outlet property="totalTimeLabel1" destination="VCJ-mF-emO" id="IAK-Ff-0j6"/>
+                        <outlet property="totalTimeLabel2" destination="nOF-ay-6qm" id="jyJ-cG-3Oj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2eU-at-3KU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6264.8000000000002" y="139.880059970015"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="a7l-lI-nmp">
             <objects>
