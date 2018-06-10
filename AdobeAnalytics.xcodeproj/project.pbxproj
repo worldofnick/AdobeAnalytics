@@ -14,6 +14,7 @@
 		17747FE020B8B74D00FC8405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17747FDE20B8B74D00FC8405 /* LaunchScreen.storyboard */; };
 		178002C420C602BA006B4E47 /* SimpleTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178002C320C602BA006B4E47 /* SimpleTrackingViewController.swift */; };
 		178002C620C60455006B4E47 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 178002C520C60455006B4E47 /* ADBMobileConfig.json */; };
+		1782E59E20CC797000E2E2DE /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1782E59D20CC797000E2E2DE /* MediaViewController.swift */; };
 		17A5066720C6446D00C7E594 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5066620C6446D00C7E594 /* MenuTableViewController.swift */; };
 		17A5066A20C6595400C7E594 /* InAppMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5066920C6595400C7E594 /* InAppMessageViewController.swift */; };
 		17A5066C20C673EF00C7E594 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5066B20C673EF00C7E594 /* PrivacyViewController.swift */; };
@@ -33,6 +34,7 @@
 		17747FE120B8B74D00FC8405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		178002C320C602BA006B4E47 /* SimpleTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTrackingViewController.swift; sourceTree = "<group>"; };
 		178002C520C60455006B4E47 /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
+		1782E59D20CC797000E2E2DE /* MediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
 		17A5066620C6446D00C7E594 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		17A5066920C6595400C7E594 /* InAppMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppMessageViewController.swift; sourceTree = "<group>"; };
 		17A5066B20C673EF00C7E594 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				17CC995F20C7423A00A02F26 /* LocationTargetingViewController.swift */,
 				17D8A98A20CC47FF0038C0D4 /* TimeActionViewController.swift */,
 				17D8A98C20CC4E150038C0D4 /* LifetimeValueViewController.swift */,
+				1782E59D20CC797000E2E2DE /* MediaViewController.swift */,
 			);
 			path = "Menu Controllers";
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17112FA720C924B70058861A /* UIColor+Hex.swift in Sources */,
+				1782E59E20CC797000E2E2DE /* MediaViewController.swift in Sources */,
 				17D8A98D20CC4E150038C0D4 /* LifetimeValueViewController.swift in Sources */,
 				17A5066720C6446D00C7E594 /* MenuTableViewController.swift in Sources */,
 				178002C420C602BA006B4E47 /* SimpleTrackingViewController.swift in Sources */,
@@ -389,6 +393,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D63MB9K6RU;
 				INFOPLIST_FILE = AdobeAnalytics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -408,6 +413,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D63MB9K6RU;
 				INFOPLIST_FILE = AdobeAnalytics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
