@@ -12,7 +12,7 @@ import MediaPlayer
 
 class MediaViewController: UIViewController {
 
-    let VIDEO_URL = "http://s7d2.scene7.com/is/content/mcmobile/new-building-AVS.m3u8"
+    let VIDEO_URL = "https://s7d2.scene7.com/is/content/mcmobile/new-building-AVS.m3u8"
     let MEDIA_NAME = "MyAdobe"
     let PLAYER_NAME = "MPMoviePlayer"
     let PLAYER_ID = "MPMoviePlayer1"
