@@ -44,6 +44,12 @@ class MediaViewController: UIViewController {
         NotificationCenter.default.removeObserver(self)
     }
     
+    @IBAction func playMedia() {
+        confgiureMediaTracking()
+        self.present(movieController, animated: true, completion: nil)
+        movieController.moviePlayer.play()
+    }
+    
     func configureMedia() {
         if let movieUrl = URL(string: VIDEO_URL) {
             movieController = MPMoviePlayerViewController(contentURL: movieUrl)
@@ -58,10 +64,49 @@ class MediaViewController: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(mediaFinishedCallback(_:)), name: NSNotification.Name.MPMoviePlayerPlaybackStateDidChange, object: moviePlayer)
     }
-
-    @IBAction func playMedia() {
-        self.present(movieController, animated: true, completion: nil)
-        movieController.moviePlayer.play()
+    
+    func confgiureMediaTracking() {
+        let mediaSettings = ADBMobile.mediaCreateSettings(withName: MEDIA_NAME, length: MEDIA_LENGTH, playerName: PLAYER_NAME, playerID: PLAYER_ID)
+        
+        if trackMilestonesSwitch.isOn {
+            /*
+             * Adobe Tracking - Media
+             *
+             * sets the milestones that we would like to track on the ADBMediaSettings Object
+             */
+            mediaSettings.milestones = "25,50,75"
+            if segmentMilestonesSwitch.isOn {
+                /*
+                 * Adobe Tracking - Media
+                 *
+                 * sets that we would like to segment by the milestones on the ADBMediaSettings Object
+                 */
+                mediaSettings.segmentByMilestones = true
+            }
+            
+        } else if trackOffsetMilestonesSwitch.isOn {
+            /*
+             * Adobe Tracking - Media
+             *
+             * sets the offsetMilestones that we would like to track on the ADBMediaSettings Object
+             */
+            mediaSettings.offsetMilestones = "60,120"
+            if segmentOffsetMilestonesSwitch.isOn {
+                /*
+                 * Adobe Tracking - Media
+                 *
+                 * sets that we would like to segment by the offsetMilestones on the ADBMediaSettings Object
+                 */
+                mediaSettings.segmentByOffsetMilestones = true
+            }
+        }
+        
+        /*
+         * Adobe Tracking - Media
+         *
+         * opens the media item, preparing it for tracking
+         */
+        ADBMobile.mediaOpen(with: mediaSettings, callback: nil)
     }
     
     @objc func mediaFinishedCallback(_ notification: Notification) {
@@ -136,8 +181,6 @@ class MediaViewController: UIViewController {
             
             ADBMobile.mediaStop(MEDIA_NAME, offset: moviePlayer.currentPlaybackTime)
         }
-            
-        
         
     }
     
